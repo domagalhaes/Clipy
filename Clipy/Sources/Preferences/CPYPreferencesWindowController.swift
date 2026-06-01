@@ -66,6 +66,13 @@ final class CPYPreferencesWindowController: NSWindowController {
         shortcutsButton.sendAction(on: .leftMouseDown)
         updatesButton.sendAction(on: .leftMouseDown)
         betaButton.sendAction(on: .leftMouseDown)
+        
+        // Hide Updates tab
+        if let updatesView = updatesButton.superview {
+            updatesView.isHidden = true
+            // To collapse the space, we can set its width constraint to 0
+            updatesView.addConstraint(NSLayoutConstraint(item: updatesView, attribute: .width, relatedBy: .equal, toItem: nil, attribute: .notAnAttribute, multiplier: 1, constant: 0))
+        }
     }
 
     override func showWindow(_ sender: Any?) {

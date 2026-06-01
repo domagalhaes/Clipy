@@ -182,13 +182,13 @@ extension AppDelegate: NSApplicationDelegate {
             promptToAddLoginItems()
         }
 
-        // Sparkle
-        self.updaterController = SPUStandardUpdaterController(
-            startingUpdater: AppEnvironment.current.defaults.bool(forKey: Constants.Update.enableAutomaticCheck),
-            updaterDelegate: nil,
-            userDriverDelegate: nil
-        )
-        updaterController?.updater.updateCheckInterval = TimeInterval(AppEnvironment.current.defaults.integer(forKey: Constants.Update.checkInterval))
+        // Sparkle (Disabled in this fork)
+        // self.updaterController = SPUStandardUpdaterController(
+        //     startingUpdater: AppEnvironment.current.defaults.bool(forKey: Constants.Update.enableAutomaticCheck),
+        //     updaterDelegate: nil,
+        //     userDriverDelegate: nil
+        // )
+        // updaterController?.updater.updateCheckInterval = TimeInterval(AppEnvironment.current.defaults.integer(forKey: Constants.Update.checkInterval))
 
         // Binding Events
         bind()
