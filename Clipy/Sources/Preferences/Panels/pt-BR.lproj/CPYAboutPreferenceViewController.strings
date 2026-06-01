@@ -1,0 +1,14 @@
+/* Class = "NSTextFieldCell"; title = "Clipy"; ObjectID = "apP-nA-mC1"; */
+"apP-nA-mC1.title" = "Clipy";
+
+/* Class = "NSTextFieldCell"; title = "This project is a fork of the original Clipy"; ObjectID = "foR-kL-aC1"; */
+"foR-kL-aC1.title" = "Este projeto é um fork do Clipy original";
+
+/* Class = "NSButtonCell"; title = "Website"; ObjectID = "weB-sI-tC1"; */
+"weB-sI-tC1.title" = "Site Oficial";
+
+/* Class = "NSButtonCell"; title = "GitHub"; ObjectID = "giT-hU-bC1"; */
+"giT-hU-bC1.title" = "GitHub";
+
+/* Class = "NSTextFieldCell"; title = "Copyright © 2015-2026 Clipy Project. All rights reserved."; ObjectID = "coP-yR-iC1"; */
+"coP-yR-iC1.title" = "Copyright © 2015-2026 Projeto Clipy. Todos os direitos reservados.";

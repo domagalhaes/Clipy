@@ -8,6 +8,9 @@
 /* Class = "NSTextFieldCell"; title = "Atualizações"; ObjectID = "N5e-ba-0Q0"; */
 "N5e-ba-0Q0.title" = "Atualizações";
 
+/* Class = "NSTextFieldCell"; title = "About"; ObjectID = "338db5c5-d"; */
+"338db5c5-d.title" = "Sobre";
+
 /* Class = "NSTextFieldCell"; title = "Nenhum painel selecionado."; ObjectID = "Vy6-Ui-lLf"; */
 "Vy6-Ui-lLf.title" = "Nenhum painel selecionado.";
 

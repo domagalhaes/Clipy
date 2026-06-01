@@ -25,6 +25,7 @@ final class CPYPreferencesWindowController: NSWindowController {
     @IBOutlet private weak var shortcutsImageView: NSImageView!
     @IBOutlet private weak var updatesImageView: NSImageView!
     @IBOutlet private weak var betaImageView: NSImageView!
+    @IBOutlet private weak var aboutImageView: NSImageView!
     // Labels
     @IBOutlet private weak var generalTextField: NSTextField!
     @IBOutlet private weak var menuTextField: NSTextField!
@@ -33,6 +34,7 @@ final class CPYPreferencesWindowController: NSWindowController {
     @IBOutlet private weak var shortcutsTextField: NSTextField!
     @IBOutlet private weak var updatesTextField: NSTextField!
     @IBOutlet private weak var betaTextField: NSTextField!
+    @IBOutlet private weak var aboutTextField: NSTextField!
     // Buttons
     @IBOutlet private weak var generalButton: NSButton!
     @IBOutlet private weak var menuButton: NSButton!
@@ -41,6 +43,7 @@ final class CPYPreferencesWindowController: NSWindowController {
     @IBOutlet private weak var shortcutsButton: NSButton!
     @IBOutlet private weak var updatesButton: NSButton!
     @IBOutlet private weak var betaButton: NSButton!
+    @IBOutlet private weak var aboutButton: NSButton!
     // ViewController
     private let viewController = [NSViewController(nibName: "CPYGeneralPreferenceViewController", bundle: nil),
                                   NSViewController(nibName: "CPYMenuPreferenceViewController", bundle: nil),
@@ -48,7 +51,8 @@ final class CPYPreferencesWindowController: NSWindowController {
                                   CPYExcludeAppPreferenceViewController(nibName: "CPYExcludeAppPreferenceViewController", bundle: nil),
                                   CPYShortcutsPreferenceViewController(nibName: "CPYShortcutsPreferenceViewController", bundle: nil),
                                   CPYUpdatesPreferenceViewController(nibName: "CPYUpdatesPreferenceViewController", bundle: nil),
-                                  CPYBetaPreferenceViewController(nibName: "CPYBetaPreferenceViewController", bundle: nil)]
+                                  CPYBetaPreferenceViewController(nibName: "CPYBetaPreferenceViewController", bundle: nil),
+                                  CPYAboutPreferenceViewController(nibName: "CPYAboutPreferenceViewController", bundle: nil)]
 
     // MARK: - Window Life Cycle
     override func windowDidLoad() {
@@ -66,7 +70,7 @@ final class CPYPreferencesWindowController: NSWindowController {
         shortcutsButton.sendAction(on: .leftMouseDown)
         updatesButton.sendAction(on: .leftMouseDown)
         betaButton.sendAction(on: .leftMouseDown)
-        
+        aboutButton.sendAction(on: .leftMouseDown)
         // Hide Updates tab
         if let updatesView = updatesButton.superview {
             updatesView.isHidden = true
@@ -113,6 +117,7 @@ private extension CPYPreferencesWindowController {
         shortcutsImageView.image = NSImage(resource: .prefShortcut)
         updatesImageView.image = NSImage(resource: .prefUpdate)
         betaImageView.image = NSImage(resource: .prefBeta)
+        aboutImageView.image = NSImage(resource: .prefAbout)
 
         generalTextField.textColor = NSColor(resource: .tabTitle)
         menuTextField.textColor = NSColor(resource: .tabTitle)
@@ -121,6 +126,7 @@ private extension CPYPreferencesWindowController {
         shortcutsTextField.textColor = NSColor(resource: .tabTitle)
         updatesTextField.textColor = NSColor(resource: .tabTitle)
         betaTextField.textColor = NSColor(resource: .tabTitle)
+        aboutTextField.textColor = NSColor(resource: .tabTitle)
     }
 
     func selectedTab(_ index: Int) {
@@ -148,6 +154,9 @@ private extension CPYPreferencesWindowController {
         case 6:
             betaImageView.image = NSImage(resource: .prefBetaOn)
             betaTextField.textColor = NSColor(resource: .clipy)
+        case 7:
+            aboutImageView.image = NSImage(resource: .prefAboutOn)
+            aboutTextField.textColor = NSColor(resource: .clipy)
         default: break
         }
     }
