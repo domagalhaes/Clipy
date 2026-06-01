@@ -10,11 +10,11 @@
 //  Copyright © 2015-2026 Clipy Project.
 //
 
-CODE_SIGN_IDENTITY[config=Debug] = Mac Developer
-CODE_SIGN_IDENTITY[config=Release] = Developer ID Application
-CODE_SIGN_STYLE = Manual
-DEVELOPMENT_TEAM = BBCHAJ584H
-PROVISIONING_PROFILE_SPECIFIER[config=Debug] = ClipyDevelopment
-PROVISIONING_PROFILE_SPECIFIER[config=Release] = ClipyDistribution
+CODE_SIGN_IDENTITY = -
+CODE_SIGN_STYLE = Automatic
+DEVELOPMENT_TEAM = 
+PROVISIONING_PROFILE_SPECIFIER = 
+CODE_SIGNING_REQUIRED = NO
+CODE_SIGNING_ALLOWED = NO
 
 // #include "Configurations/CodeSigning-AdHoc.xcconfig"

@@ -762,6 +762,7 @@
     },
     "Type" : {
       "extractionState" : "manual",
+      "generatesSymbol" : false,
       "localizations" : {
         "pt-BR" : {
           "stringUnit" : {
