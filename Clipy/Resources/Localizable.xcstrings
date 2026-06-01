@@ -760,7 +760,7 @@
         }
       }
     },
-    "Type" : {
+    "TypeTitle" : {
       "extractionState" : "manual",
       "generatesSymbol" : false,
       "localizations" : {
